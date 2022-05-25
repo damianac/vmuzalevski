@@ -11,5 +11,5 @@ $headers = "Form: ".$mailForm;
 $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
 mail($mailto, $subject, $txt, $headers);
-
+header("Location: index.php?mailsend");
 }
